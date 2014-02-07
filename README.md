@@ -1,13 +1,13 @@
 Vagrant environment for edeploy
 ===============================
 
-Vagrant environment that will create a vm, install and configure edeploy using puppet-edeploy, along with a dhcp server, then will compile the pxe and base roles, an openstack-common role, and an update to the openstack-common role, so that you can see what the process is for managing a cluster with edeploy.
+Vagrant environment that will create a vm and install and configure edeploy using puppet-edeploy, along with a dhcp server. Then it will compile the pxe and base roles, an openstack-common role, and an update to the openstack-common role, so that you can see what the process is for managing a cluster with edeploy. There is also a blank VM that can be easily deployed once these tasks are done to see it in action.
 
 ## Requirements
 
-    vagrant 2.0 (http://www.vagrantup.com/)
-    virtualbox 4+ (https://www.virtualbox.org/wiki/Downloads)
-    virtualbox extensions 
+    Vagrant 2.0 (http://www.vagrantup.com/)
+    Virtualbox 4+ (https://www.virtualbox.org/wiki/Downloads)
+    Virtualbox extensions 
 
 The extensions are needed to give VMs pxe capability, without which the environment does not demonstrate much at all.
 
@@ -31,11 +31,11 @@ The first box will be used to deploy edeploy and is a pretty standard debian whe
 
 If you have an http proxy, like squid, you can use it via en environment variable
 
-    export HTTP\_PROXY=192.168.0.13:8000
+    export HTTP_PROXY=192.168.0.13:8000
 
 You can similarly change the http debian mirror:
 
-    export APT\_MIRROR=mirror.aarnet.edu.au
+    export APT_MIRROR=mirror.aarnet.edu.au
 
 First, bring up the edeploy box. 
 
