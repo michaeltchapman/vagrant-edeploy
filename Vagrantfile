@@ -17,7 +17,7 @@ end
 VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  config.vm.define "edeployd" do |edeploy|
+  config.vm.define "edeploy" do |edeploy|
     edeploy.vm.box = "debian"
     edeploy.vm.network "private_network", ip: "192.168.99.100"
     edeploy.vm.provision "shell", inline: "sed -i 's/http.us.debian.org/" + args[1] + "/g' /etc/apt/sources.list"
@@ -27,7 +27,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     end
   end
 
-  config.vm.define "targetd" do |target|
+  config.vm.define "target" do |target|
     target.vm.box = "blank"
     target.vm.network "private_network", ip: "192.168.99.55"
     target.vm.provider "virtualbox" do |v|
