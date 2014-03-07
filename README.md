@@ -39,7 +39,7 @@ You can similarly change the http debian mirror:
 
 First, bring up the edeploy box.
 
-    vagrant up edeploy
+    vagrant up edeployd
 
 You can follow along with what's happening by looking at the build.sh script.
 
