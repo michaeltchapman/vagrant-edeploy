@@ -22,7 +22,7 @@ Clone this repository
 
 Install the two vagrant boxes
 
-    vagrant box add debian https://www.dropbox.com/s/si19tbftilcuipz/debian-7.0-amd64.box
+    vagrant box add debian https://drive.google.com/file/d/0B5nT3BfWpgzsRE9JeXhiM2YtU2M/edit?usp=sharing
     vagrant box add blank blank.box
 
 The first box will be used to deploy edeploy and is a pretty standard debian wheezy box from www.vagrantbox.es. The second is a box with almost nothing attached except a couple of nics, one of which will be set to pxe boot.
